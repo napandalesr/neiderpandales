@@ -31,3 +31,25 @@ body {
     text-wrap: balance;
   }
 }
+
+header .nav .item > *:nth-child(2) {
+  @apply absolute -right-24 transition-all ease-in-out;
+}
+
+header .nav .item:hover > *:nth-child(2) {
+  @apply right-2;
+}
+
+header .nav .item > *:nth-child(1) {
+  @apply transition-all ease-in-out;
+}
+
+header .nav .item:hover > *:nth-child(1) {
+  @apply scale-110;
+}
+
+@layer base {
+  html, body {
+    @apply max-w-[1920px] mx-auto text-black opacity-100 xl:overflow-x-hidden w-full;
+  }
+}
