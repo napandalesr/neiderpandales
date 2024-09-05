@@ -2,6 +2,7 @@ import Title from '@/components/title';
 import { masterDataES } from '@/utils/masterData';
 import { showToast } from '@/utils/showToast';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Contacto = () => {
@@ -40,7 +41,7 @@ const Contacto = () => {
 
   return <section id={masterDataES.nav[3].navbar}>
     <Title text='Contacto'/>
-    <Image src={'/icons/whatsapp.png'} alt='whatsapp' width={380} height={60}/>
+    <Link className='border-2 p-2 flex w-max rounded shadow hover:scale-110 transition ease-in-out' href='https://dm.wa.link/0a0dgs' target='_blank'><Image src={'/icons/whatsapp.png'} alt='whatsapp' width={380} height={60}/></Link>
     <Image src={'/icons/call.png'} alt='whatsapp' width={380} height={60}/>
     <Image src={'/icons/email.png'} alt='whatsapp' width={380} height={60}/>
     <section>

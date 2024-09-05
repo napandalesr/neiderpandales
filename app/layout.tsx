@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import AnimatedCursor from "react-animated-cursor";
+
 import Whatsapp from "@/components/whatsapp";
 import ToastProvider from "@/components/ToastProvider";
 
@@ -18,20 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>
-        <AnimatedCursor 
-        color="#fff"
-        innerSize={8}
-        outerSize={35}
-        innerScale={0.1}
-        outerScale={1.7}
-        outerAlpha={0}
-        outerStyle={{
-          backgroundColor: '#fff',
-          mixBlendMode: 'exclusion',
-        }}
-        showSystemCursor/>
         <main className="bg-[url('/images/fondo.jpg')] bg-no-repeat bg-cover relative xl:h-screen">
         <Whatsapp/>
         <ToastProvider>

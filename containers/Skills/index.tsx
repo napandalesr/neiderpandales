@@ -21,7 +21,7 @@ const Skills = () => {
     tecRef && tecRef.current && tecRef.current.scrollIntoView({behavior: 'smooth'});
   }
 
-  return <section className='overflow-hidden h-full' id={masterDataES.nav[2].navbar}>
+  return <section className='overflow-hidden h-full text-custom-text' id={masterDataES.nav[2].navbar}>
     <span ref={tecRef}></span>
     <Title text='Habilidades'/>
     <section className='md:ml-4 md:h-[30rem] relative'>
@@ -121,7 +121,7 @@ const Skills = () => {
     </section>
     <section className='md:ml-4 md:h-[32rem] relative' ref={blandasRef}>
       <h3 className='text-2xl font-bold text-custom-primary'>Blandas</h3>
-      <section className='ml-4 flex flex-wrap md:flex-nowrap gap-6 mt-4'>
+      <section className='ml-4 flex flex-wrap md:flex-nowrap md:gap-6 mt-4'>
         <section>
           <section>
             Trabajo en Equipo

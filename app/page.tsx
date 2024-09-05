@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import AnimatedCursor from "react-animated-cursor";
 
 import Header from "@/components/header";
 import About from "@/containers/About";
@@ -31,8 +32,21 @@ export default function Home() {
   
   const changeNavBar = (nav: navbarOptionTypes) => {
     if(width < 762) {
-      window.location.replace('#'+nav);
-      setTimeout(()=>{setNavBar(nav);},300)
+      //window.location.replace('#'+nav);
+      setTimeout(()=>{setNavBar(nav);},100)
+      const element = document.getElementById(nav);
+
+    // Verifica si el elemento existe
+    if (element) {
+        // Calcula la posición del elemento y ajusta 100px hacia arriba
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 100;
+
+        // Desplaza la ventana hacia la posición calculada
+        window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth' // Desplazamiento suave
+        });
+    }
     }else {
       setChange(true);
       setTimeout(()=>{setNavBar(nav);},300);
@@ -46,6 +60,21 @@ export default function Home() {
   
   return (
     <section className="flex items-center xl:h-screen flex-col xl:flex-row">
+      {
+        width >=760 && <AnimatedCursor 
+        color="#fff"
+        innerSize={8}
+        outerSize={35}
+        innerScale={0.1}
+        outerScale={1.7}
+        outerAlpha={0}
+        outerStyle={{
+          backgroundColor: '#fff',
+          mixBlendMode: 'exclusion',
+        }}
+        showSystemCursor/>
+      }
+      
       <Header navBar={navBar} changeNavBar={changeNavBar} data={leng === 'ES' ? masterDataES : masterDataEN}/>
       <Info/>
       <Panel change={change} changeLenguage={changeLenguage} leng={leng}>

@@ -158,7 +158,7 @@ export const masterDataES: masterData = {
           title: "Empresa",
           bussines: 'Frenlance',
           dates: 'Mayo 2019 - Diciembre 2021',
-          cargo: 'Web master',
+          cargo: 'Desarrollador full stack',
           description: {
             text: `Mis inicios en el desarrollo con proyecto para fundaciones, artistas, agencias turisticas y colegios`
           },
@@ -339,7 +339,7 @@ export const masterDataEN: masterData = {
           title: "Company",
           bussines: 'Frenlance',
           dates: 'Mayo 2019 - Diciembre 2021',
-          cargo: 'Web master',
+          cargo: 'Full stack developer',
           description: {
             text: `My beginnings in development with a project for foundations, artists, tourist agencies and schools`
           },

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 import Title from '@/components/title';
@@ -31,25 +31,25 @@ const Resume = ({education, experiencie}: resumeType) => {
   return <section id={masterDataES.nav[1].navbar}>
     <section className='lg:h-52'>
       <Title text={education.title}/>
-      <h3 className='ml-4 text-2xl text-custom-primary font-bold'>{education.institute} - <span className='text-custom-secundary'>{education.degree}</span></h3>
-      <h5 className='ml-4 text-xl text-custom-primary font-bold mt-2'>{experiencie.subtitle}</h5>
-      <p className='ml-4 text-custom-text text-sm'>
+      <h3 className='md:ml-4 text-xl md:text-2xl text-custom-primary font-bold'>{education.institute} - <span className='text-custom-secundary'>{education.degree}</span></h3>
+      <h5 className='md:ml-4 text-xl md:text-xl text-custom-primary font-bold mt-2'>{experiencie.subtitle}</h5>
+      <p className='md:ml-4 text-custom-text text-sm'>
         {education.description}
       </p>
     </section>
     <section className='relative w-full pb-12 lg:h-80'>
       <Title text={experiencie.title}/>
       <section className={`${animationParagraph} overflow-hidden`}>
-        <h3 className='ml-4 text-2xl text-custom-primary font-bold'>{experiencie.description[counter].title}: <span className='text-custom-secundary'>{experiencie.description[counter].bussines}</span></h3>
+        <h3 className='md:ml-4 text-xl md:text-2xl text-custom-primary font-bold'>{experiencie.description[counter].title}: <span className='text-custom-secundary'>{experiencie.description[counter].bussines}</span></h3>
         <span className='ml-4 text-custom-text font-bold'>{experiencie.description[counter].dates}</span>
-        <section className='flex mt-2 ml-4'>
+        <section className='flex mt-2 md:ml-4 gap-4 content-between'>
           <section className='w-[45%]'>
-            <h5 className='text-xl text-custom-primary font-bold'>{experiencie.subtitle}</h5>
-            <p className='text-custom-text text-sm mr-4'>{experiencie.description[counter].description.text}</p>
+            <h5 className='text-lg md:text-xl text-custom-primary font-bold'>{experiencie.subtitle}</h5>
+            <p className='text-custom-text text-sm mr-4 min-w-32 '>{experiencie.description[counter].description.text}</p>
             <p className='text-custom-text text-sm mr-4'><span className='text-custom-primary font-bold'>Cargo:</span> {experiencie.description[counter].cargo}</p>
           </section>
           <section>
-            <h5 className='text-xl text-custom-primary font-bold'>{experiencie.subtitle2}</h5>
+            <h5 className='text-lg md:text-xl text-custom-primary font-bold'>{experiencie.subtitle2}</h5>
             <p className='text-custom-text text-sm' dangerouslySetInnerHTML={{__html: experiencie.description[counter].functions.text}}></p>
           </section>
         </section>
