@@ -30,7 +30,7 @@ export const masterDataES: masterData = {
     text: `Soy Ingeniero de Sistemas con más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles. Con un sólido conocimiento en javascript 
         y algunos frameworks modernos, así como en la gestión de bases de datos, me destaco por mi capacidad para diseñar, 
         implementar y mantener soluciones tecnológicas eficientes y escalables. Además de mis habilidades técnicas, poseo una fuerte capacidad 
-        trabajo en equipo y resolución de problemas. Apasionado por enseñar programación a principiantes, estudiantes y avanzados, disfruto compartir mi 
+        trabajo en equipo y resolución de problemas. Apasionado por enseñar programación a principiantes y estudiantes, disfruto compartir mi 
         conocimiento y ver el crecimiento de otros profesionales. Soy proactivo, adaptable y comprometido con la mejora continua y la innovación tecnológica, 
         buscando siempre nuevas oportunidades para aprender y contribuir en proyectos desafiantes.`,
     info: [
