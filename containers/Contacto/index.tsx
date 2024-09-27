@@ -1,3 +1,4 @@
+import LoadingComponent from '@/components/Loading';
 import Title from '@/components/title';
 import { masterDataES } from '@/utils/masterData';
 import { showToast } from '@/utils/showToast';
@@ -19,29 +20,38 @@ const Contacto = () => {
     if(form.name === '' || form.email === ''  || form.text === '') {
       showToast("error", <p>Todos los campos son obligatorios</p>);
     }else {
-      const res = await fetch('/api/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({name: form.name, to: form.email, text: form.text }),
-      });
-  
-      const data = await res.json();
-  
-      if (res.ok) {
-        showToast("success", <p>Correo enviado con éxito!</p>);
-        //alert('Correo enviado con éxito');
-      } else {
-        showToast("error", <p>{data.message}</p>);
+      try {
+        const res = await fetch('/api/email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({name: form.name, to: form.email, text: form.text }),
+        });
+    
+        const data = await res.json();
+    
+        if (res.ok) {
+          showToast("success", <p>Solicitud enviada con éxito!</p>);
+          setForm({
+            name: '',
+            email: '',
+            text: '',
+          });
+        } else {
+          showToast("error", <p>{data.message}</p>);
+        }
+      } catch (error) {
+        showToast("error", <p>Hubo un error, por favor intente más tarde</p>);
       }
+      
     }
     setLaoding(false);
   };
 
   return <section id={masterDataES.nav[3].navbar}>
     <Title text='Contacto'/>
-    <Link className='border-2 p-2 flex w-max rounded shadow hover:scale-110 transition ease-in-out' href='https://dm.wa.link/0a0dgs' target='_blank'><Image src={'/icons/whatsapp.png'} alt='whatsapp' width={380} height={60}/></Link>
+    <Link className='border-2 p-2 flex w-max max-w-full rounded shadow hover:scale-110 transition ease-in-out' href='https://dm.wa.link/0a0dgs' target='_blank'><Image src={'/icons/whatsapp.png'} alt='whatsapp' width={380} height={60}/></Link>
     <Image src={'/icons/call.png'} alt='whatsapp' width={380} height={60}/>
     <Image src={'/icons/email.png'} alt='whatsapp' width={380} height={60}/>
     <section>
@@ -54,7 +64,10 @@ const Contacto = () => {
         <button className='mx-auto border-2 px-6 py-2 mt-2 rounded-3xl bg-custom-primary text-white font-bold' onClick={handleSubmit}>Enviar</button>
       </section>
     </section>
-</section>;
+    {
+      loading && <LoadingComponent/>
+    }
+    </section>;
 }
 
 export default Contacto;
