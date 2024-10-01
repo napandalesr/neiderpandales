@@ -84,7 +84,7 @@ export const masterDataES: masterData = {
         {
           title: "Empresa",
           bussines: 'Marabunta',
-          dates: 'Febrero 2023 - Actualmente',
+          dates: 'Marzo 2024 - Actualmente',
           cargo: 'Desarrollador full stack',
           description: {
             text: `Es una agencia publicidad de Cali, dedicada a la producción de eventos, creación de estrategias, desarrollo a la medida, comunicación y prensa`
@@ -265,7 +265,7 @@ export const masterDataEN: masterData = {
         {
           title: "Company",
           bussines: 'Marabunta',
-          dates: 'February 2023 - Currently',
+          dates: 'May 2024 - Currently',
           cargo: 'Full stack developer',
           description: {
             text: `It is an advertising agency located in Cali, dedicated to the production of events, creation of strategies, custom development, communication and press.`
