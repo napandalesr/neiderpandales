@@ -49,7 +49,7 @@ const Contacto = () => {
     setLaoding(false);
   };
 
-  return <section id={masterDataES.nav[3].navbar}>
+  return <section id={masterDataES.nav[4].navbar}>
     <Title text='Contacto'/>
     <Link className='border-2 p-2 flex w-max max-w-full rounded shadow hover:scale-110 transition ease-in-out' href='https://dm.wa.link/0a0dgs' target='_blank'><Image src={'/icons/whatsapp.png'} alt='whatsapp' width={380} height={60}/></Link>
     <Image src={'/icons/call.png'} alt='whatsapp' width={380} height={60}/>

@@ -12,6 +12,7 @@ import Resume from "@/containers/Resume";
 import Skills from "@/containers/Skills";
 import { aboutType, masterDataEN, masterDataES, navbarOptionTypes, recommendationsType, resumeType } from "@/utils/masterData";
 import useScreenSize from "@/hooks/useScreenSize";
+import Libreries from "@/containers/Libreries";
 
 
 export default function Home() {
@@ -31,6 +32,8 @@ export default function Home() {
   }, [leng])
   
   const changeNavBar = (nav: navbarOptionTypes) => {
+    console.log('nav', nav);
+    
     if(width < 762) {
       //window.location.replace('#'+nav);
       setTimeout(()=>{setNavBar(nav);},100)
@@ -83,6 +86,7 @@ export default function Home() {
           <About about={dataAbout} opinions={dataOpinions}/>
           <Resume {...dataResume}/>
           <Skills/>
+          <Libreries/>
           <Contacto/>
           </> : <>
           {
@@ -93,6 +97,10 @@ export default function Home() {
           }
           {
             navBar === "skill" && <Skills/>
+          }
+          
+          {
+            navBar === "library" && <Libreries/>
           }
           {
             navBar === "contact" && <Contacto/>

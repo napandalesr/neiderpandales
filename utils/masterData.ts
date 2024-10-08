@@ -19,6 +19,12 @@ export const masterDataES: masterData = {
       navbar: 'skill',
     },
     {
+      title: 'Librerias',
+      icon: '/icons/lib.png',
+      alt: 'library',
+      navbar: 'library',
+    },
+    {
       title: 'Contacto',
       icon: '/icons/incoming-call.png',
       alt: 'incoming-call',
@@ -198,6 +204,12 @@ export const masterDataEN: masterData = {
       icon: '/icons/code-file-broken.png',
       alt: 'code-file-broken',
       navbar: 'skill',
+    },
+    {
+      title: 'Libraries',
+      icon: '/icons/lib.png',
+      alt: 'library',
+      navbar: 'library',
     },
     {
       title: 'Contact',
@@ -410,7 +422,7 @@ export type masterData = {
   resume: resumeType;
 }
 
-export type navbarOptionTypes = "about" | "resume" | "skill" | "contact"
+export type navbarOptionTypes = "about" | "resume" | "skill" | "contact" | "library"
 
 export type navbarType = {
   title: string,
