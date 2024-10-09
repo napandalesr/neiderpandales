@@ -13,11 +13,14 @@ import Skills from "@/containers/Skills";
 import { aboutType, masterDataEN, masterDataES, navbarOptionTypes, recommendationsType, resumeType } from "@/utils/masterData";
 import useScreenSize from "@/hooks/useScreenSize";
 import Libreries from "@/containers/Libreries";
+import Modal from "@/components/Modal";
 
 
 export default function Home() {
   const [navBar, setNavBar] = useState<navbarOptionTypes>("about");
+  const [showModal, setShowModal] = useState<boolean>(false);
   const [change, setChange] = useState<boolean>(false);
+  const [video, setVideo] = useState<string>('');
   const [leng, setLeng] = useState<'EN' | 'ES'>('ES');
   const [dataAbout, setDataAbout] = useState<aboutType>(masterDataES.about);
   const [dataOpinions, setDataOpinions] = useState<recommendationsType[]>(masterDataES.recommendations);
@@ -32,8 +35,6 @@ export default function Home() {
   }, [leng])
   
   const changeNavBar = (nav: navbarOptionTypes) => {
-    console.log('nav', nav);
-    
     if(width < 762) {
       //window.location.replace('#'+nav);
       setTimeout(()=>{setNavBar(nav);},100)
@@ -60,6 +61,11 @@ export default function Home() {
   const changeLenguage = (leng: 'EN' | 'ES') => {
     setLeng(leng);
   }
+
+  const changeShowModal = (src: string) => {
+    setVideo(src);
+    setShowModal(!showModal);
+  } 
   
   return (
     <section className="flex items-center xl:h-screen flex-col xl:flex-row">
@@ -86,7 +92,7 @@ export default function Home() {
           <About about={dataAbout} opinions={dataOpinions}/>
           <Resume {...dataResume}/>
           <Skills/>
-          <Libreries/>
+          <Libreries changeShowModal={changeShowModal}/>
           <Contacto/>
           </> : <>
           {
@@ -100,15 +106,15 @@ export default function Home() {
           }
           
           {
-            navBar === "library" && <Libreries/>
+            navBar === "library" && <Libreries changeShowModal={changeShowModal}/>
           }
           {
             navBar === "contact" && <Contacto/>
           }
           </>
         }
-        
       </Panel>
+      {showModal && <Modal src={video} changeShowModal={changeShowModal}/>}
     </section>
   );
 }
