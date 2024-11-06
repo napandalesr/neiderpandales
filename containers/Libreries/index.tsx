@@ -12,8 +12,9 @@ type props = {
 }
 
 const Libreries = ({ changeShowModal }: props) => {
-  <Title text='Librerías'/>
-  return <section id={masterDataES.nav[3].navbar}>
+  
+  return <section className='h-[85%] pb-12' id={masterDataES.nav[3].navbar}>
+    <Title text='Librerías'/>
   <section className='flex gap-6 flex-col md:flex-row mt-8 overflow-y-auto flex-wrap h-full'>
     <section className='border-2 rounded-lg lg:w-[45%] p-10'>
       <h4 className='text-lg md:text-2xl text-custom-primary font-bold'>
