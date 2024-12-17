@@ -36,77 +36,61 @@ export const Skills = () => {
             Nest js <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
-            Spring boot
-            <span className='flex gap-2'>{<Stars full={1}/>}</span>
+            Spring boot <span className='flex gap-2'>{<Stars full={1}/>}</span>
           </section>
           <section>
-            .NET
-            <span className='flex gap-2'>{<Stars full={1}/>}</span>
+            .NET <span className='flex gap-2'>{<Stars full={1}/>}</span>
           </section>
         </section>
         <section className='md:w-1/3'>
           <h5 className='text-xl text-custom-secundary font-bold'>Frontend</h5>
           <section>
-            React js
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            React js <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
-            Next js
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Next js <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
-            Angular js
-            <span className='flex gap-2'>{<Stars full={3}/>}</span>
+            Angular js <span className='flex gap-2'>{<Stars full={3}/>}</span>
           </section>
           <section>
-            React Native
-            <span className='flex gap-2'>{<Stars full={2}/>}</span>
+            React Native <span className='flex gap-2'>{<Stars full={2}/>}</span>
           </section>
           <section>
-            Tailwind css
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Tailwind css <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
-            Sass
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Sass <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
         </section>
         <section className='md:w-1/3'>
           <h5 className='text-xl text-custom-secundary font-bold'>Diseño</h5>
           <section>
-            Figma
-            <span className='flex gap-2'>{<Stars full={3}/>}</span>
+            Figma <span className='flex gap-2'>{<Stars full={3}/>}</span>
           </section>
           <section>
-            Illustrator
-            <span className='flex gap-2'>{<Stars full={2}/>}</span>
+            Illustrator <span className='flex gap-2'>{<Stars full={2}/>}</span>
           </section>
           <section>
-            Photoshop
-            <span className='flex gap-2'>{<Stars full={2}/>}</span>
+            Photoshop <span className='flex gap-2'>{<Stars full={2}/>}</span>
           </section>
         </section>
         <section className='md:w-1/3'>
-        <h5 className='text-xl text-custom-secundary font-bold'>SGBD</h5>
-        <section>
-            Oracle
-            <span className='flex gap-2'>{<Stars full={3}/>}</span>
+          <h5 className='text-xl text-custom-secundary font-bold'>SGBD</h5>
+          <section>
+            Oracle <span className='flex gap-2'>{<Stars full={3}/>}</span>
           </section>
           <section>
-            MySQL
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            MySQL <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
           <section>
-            PostgreSQL
-            <span className='flex gap-2'>{<Stars full={3}/>}</span>
+            PostgreSQL <span className='flex gap-2'>{<Stars full={3}/>}</span>
           </section>
           <section>
-            MongoDB
-            <span className='flex gap-2'>{<Stars full={3}/>}</span>
+            MongoDB <span className='flex gap-2'>{<Stars full={3}/>}</span>
           </section>
           <section>
-            Firestore
-            <span className='flex gap-2'>{<Stars full={2}/>}</span>
+            Firestore <span className='flex gap-2'>{<Stars full={2}/>}</span>
           </section>
         </section>
         {
@@ -122,46 +106,39 @@ export const Skills = () => {
       <section className='ml-4 flex flex-wrap md:flex-nowrap md:gap-6 mt-4'>
         <section>
           <section>
-            Trabajo en Equipo
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            Trabajo en Equipo <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
           <section>
-            Comunicación Efectiva
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            Comunicación Efectiva <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
           <section>
-            Resolución de Problemas
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Resolución de Problemas <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
         </section>
         <section>
           <section>
-            Adaptabilidad
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            Adaptabilidad <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
           <section>
-            Creatividad
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            Creatividad <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
           <section>
-            Liderazgo
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
+            Liderazgo <span className='flex gap-2'>{<Stars full={4}/>}</span>
           </section>
         </section>
       </section>
       <h3 className='text-2xl font-bold text-custom-primary mt-8'>Idiomas</h3>
-        <section className='ml-4 mt-2'>
+      <section className='ml-4 mt-2'>
         <section>
-            Español - Nativo
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
-          </section>
-          <section className='mt-4'>
-            Ingles
-            <p className="text-xs">Escrito</p>
-            <span className='flex gap-2'>{<Stars full={4}/>}</span>
-            <p className="text-xs mt-2">Hablado</p>
-            <span className='flex gap-2'>{<Stars full={2}/>}</span>
-          </section>
+          Español - Nativo <span className='flex gap-2'>{<Stars full={4}/>}</span>
+        </section>
+        <section className='mt-4'>
+          Ingles
+          <p className="text-xs">Escrito</p>
+          <span className='flex gap-2'>{<Stars full={4}/>}</span>
+          <p className="text-xs mt-2">Hablado</p>
+          <span className='flex gap-2'>{<Stars full={2}/>}</span>
+        </section>
         </section>
       {
         width >= 768 && <section className='w-full flex absolute bottom-4'>
