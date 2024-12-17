@@ -8,7 +8,7 @@ import { masterDataES, resumeType } from '@/utils/masterData';
 
 import 'animate.css';
 
-const Resume = ({education, experiencie}: resumeType) => {
+export const Resume = ({education, experiencie}: resumeType) => {
   const [ counter, setCounter] = useState(0);
   const [ animationParagraph, setAnimationParagraph] = useState('');
 
@@ -67,5 +67,3 @@ const Resume = ({education, experiencie}: resumeType) => {
     </section>
   </section>;
 }
-
-export default Resume;

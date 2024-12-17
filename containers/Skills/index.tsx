@@ -8,7 +8,7 @@ import Stars from '@/components/Stars';
 import useScreenSize from '@/hooks/useScreenSize';
 import { masterDataES } from '@/utils/masterData';
 
-const Skills = () => {
+export const Skills = () => {
   const blandasRef = useRef<HTMLDivElement>(null);
   const tecRef = useRef<HTMLDivElement>(null);
   const { width } = useScreenSize();
@@ -174,5 +174,3 @@ const Skills = () => {
     </section>
   </section>;
 }
-
-export default Skills;

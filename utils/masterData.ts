@@ -98,7 +98,7 @@ export const masterDataES: masterData = {
           functions: {
             text: `Diseñador web<br/>
             Administración de servidores linux<br/>
-            Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Ubuntu server`
+            Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Docker, CI/CD, Ubuntu server`
           }
         },
         {
@@ -301,7 +301,7 @@ export const masterDataEN: masterData = {
             Developer Azure<br/>
             Developer GCP<br/>
             Developer Mysql<br/>
-            Technologies: Azure devops, Nest js, Next js, Sass, CI/CD, GCP storage, Mysql`
+            Technologies: Azure devops, Nest js, Next js, Sass, CI/CD, Github Actions, GCP storage, Mysql`
           }
         },
         {

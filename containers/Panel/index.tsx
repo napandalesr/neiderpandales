@@ -9,7 +9,7 @@ type Props = {
   leng: 'EN' | 'ES'
 }
 
-const Panel = ({children, change, changeLenguage, leng}: Props) => {
+export const Panel = ({children, change, changeLenguage, leng}: Props) => {
   const [showPanel, setShowPanel] = useState<boolean>(false);
 
   useEffect(()=> {
@@ -33,5 +33,3 @@ const Panel = ({children, change, changeLenguage, leng}: Props) => {
     }
   </section>;
 }
-
-export default Panel;

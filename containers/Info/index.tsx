@@ -3,8 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Info = () => {
-
+export const Info = () => {
   return <section className='w-[90%] md:w-[300px] min-h-[653px] md:max-h-[98vh] md:ml-4 rounded-lg bg-white text-center drop-shadow-[6px_2px_10px_rgba(97,97,97,1)] relative z-10 mt-32 md:mt-0'>
     <Image className='w-full object-cover rounded-lg' src={'/images/home/profile.png'} alt='Profile' width={384} height={496} quality={100} />
     <h1 className='w-[300px] font-bold text-custom-text'>Neider Andres Pandales Renteria</h1>
@@ -20,5 +19,3 @@ const Info = () => {
     </section>
   </section>;
 }
-
-export default Info;

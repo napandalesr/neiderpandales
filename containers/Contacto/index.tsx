@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-const Contacto = () => {
+export const Contacto = () => {
   const [loading, setLaoding] = useState(false);
   const [form, setForm] = useState({
     name: '',
@@ -69,5 +69,3 @@ const Contacto = () => {
     }
     </section>;
 }
-
-export default Contacto;

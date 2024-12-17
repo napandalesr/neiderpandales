@@ -17,7 +17,7 @@ type Props = {
   opinions: recommendationsType[]
 }
 
-const About = ({ about, opinions }: Props) => {
+export const About = ({ about, opinions }: Props) => {
   const opinionsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const { width } = useScreenSize();
@@ -80,5 +80,3 @@ const About = ({ about, opinions }: Props) => {
     </section>
   </section>;
 }
-
-export default About;
