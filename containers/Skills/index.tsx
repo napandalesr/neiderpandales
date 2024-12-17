@@ -14,11 +14,11 @@ export const Skills = () => {
   const { width } = useScreenSize();
 
   const showMores = () => {
-    blandasRef && blandasRef.current && blandasRef.current.scrollIntoView({behavior: 'smooth'});
+    blandasRef?.current?.scrollIntoView({behavior: 'smooth'});
   }
 
   const showBack = () => {
-    tecRef && tecRef.current && tecRef.current.scrollIntoView({behavior: 'smooth'});
+    tecRef?.current?.scrollIntoView({behavior: 'smooth'});
   }
 
   return <section className='overflow-hidden h-full text-custom-text' id={masterDataES.nav[2].navbar}>
@@ -30,12 +30,10 @@ export const Skills = () => {
         <section className='md:w-1/3'>
           <h5 className='text-xl text-custom-secundary font-bold'>Backend</h5>
           <section>
-            Node js
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Node js <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
-            Nest js
-            <span className='flex gap-2'>{<Stars full={5}/>}</span>
+            Nest js <span className='flex gap-2'>{<Stars full={5}/>}</span>
           </section>
           <section>
             Spring boot

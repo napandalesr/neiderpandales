@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 export const Contacto = () => {
-  const [loading, setLaoding] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -17,7 +17,7 @@ export const Contacto = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    setLaoding(true);
+    setLoading(true);
     if(form.name === '' || form.email === ''  || form.text === '') {
       showToast("error", <p>Todos los campos son obligatorios</p>);
     }else {
@@ -46,7 +46,7 @@ export const Contacto = () => {
         showToast("error", <p>Hubo un error, por favor intente más tarde</p>);
       }
     }
-    setLaoding(false);
+    setLoading(false);
   };
 
   return <section id={masterDataES.nav[4].navbar}>

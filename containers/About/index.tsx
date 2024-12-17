@@ -60,7 +60,7 @@ export const About = ({ about, opinions }: Props) => {
           className={``}
         >
           {
-            opinions.map(opinion => <SwiperSlide className={`!w-60`}><Opinions key={opinion.name} img={opinion.img} link={opinion.link} text={opinion.text} name={opinion.name}/></SwiperSlide>)
+            opinions.map(opinion => <SwiperSlide key={opinion.name} className={`!w-60`}><Opinions img={opinion.img} link={opinion.link} text={opinion.text} name={opinion.name}/></SwiperSlide>)
           }
         </Swiper>
         :
