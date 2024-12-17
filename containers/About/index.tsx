@@ -22,11 +22,11 @@ export const About = ({ about, opinions }: Props) => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const { width } = useScreenSize();
   const aboutScrollOpinions = () => {
-    opinionsRef && opinionsRef.current && opinionsRef.current.scrollIntoView({ behavior: 'smooth' });
+    opinionsRef?.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
   const aboutScroll = () => {
-    aboutRef && aboutRef.current && aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    aboutRef?.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return <section className={`overflow-hidden h-full`} id={masterDataES.nav[0].navbar}>

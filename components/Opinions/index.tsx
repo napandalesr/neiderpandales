@@ -2,12 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { recommendationsType } from '@/utils/masterData';
 import useScreenSize from '@/hooks/useScreenSize';
 
-const Opinions = ({ img, text, link, name }: recommendationsType) => {
+const Opinions = ({ img, text, name }: recommendationsType) => {
   const [showText, setShowText] = useState(true);
   const { width } = useScreenSize();
 
