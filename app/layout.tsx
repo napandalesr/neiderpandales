@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Whatsapp from "@/components/whatsapp";
 import ToastProvider from "@/components/ToastProvider";
+import Chatbot from "@/containers/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
     <html lang="es">
       <body className={inter.className}>
         <main className="bg-[url('/images/fondo.jpg')] bg-no-repeat bg-cover relative xl:h-screen">
-        <Whatsapp/>
+        <Chatbot/>
+        {/*<Whatsapp/>*/}
         <ToastProvider>
           {children}
         </ToastProvider>

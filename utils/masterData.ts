@@ -33,14 +33,14 @@ export const masterDataES: masterData = {
   ],
   about: {
     title: 'Sobre mí',
-    text: `Soy Ingeniero de Sistemas con más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles. Con un sólido conocimiento en javascript 
+    text: `Soy Ingeniero de Sistemas con más de 6 años de experiencia en el desarrollo de aplicaciones web y móviles. Con un sólido conocimiento en javascript 
         y algunos frameworks modernos, así como en la gestión de bases de datos, me destaco por mi capacidad para diseñar, 
         implementar y mantener soluciones tecnológicas eficientes y escalables. Además de mis habilidades técnicas, poseo una fuerte capacidad 
         trabajo en equipo y resolución de problemas. Apasionado por enseñar programación a principiantes y estudiantes, disfruto compartir mi 
         conocimiento y ver el crecimiento de otros profesionales. Soy proactivo, adaptable y comprometido con la mejora continua y la innovación tecnológica, 
         buscando siempre nuevas oportunidades para aprender y contribuir en proyectos desafiantes.`,
     info: [
-      'Edad: 28',
+      'Edad: 29',
       'Ciudad: Cali, Valle del cauca',
       'Dirección: Cra 2b #65a - 11',
       'Hobbies: Fútbol, Ajedrez'
@@ -89,14 +89,28 @@ export const masterDataES: masterData = {
       description: [
         {
           title: "Empresa",
-          bussines: 'Marabunta',
-          dates: 'Marzo 2024 - Actualmente',
+          bussines: 'OlSoftware',
+          dates: 'Abril 2024 - Actualmente',
           cargo: 'Desarrollador full stack',
           description: {
             text: `Es una agencia publicidad de Cali, dedicada a la producción de eventos, creación de estrategias, desarrollo a la medida, comunicación y prensa`
           },
           functions: {
-            text: `Diseñador web<br/>
+            text: `Desarrollador full stack<br/>
+            Tecnologias: Figma, React, React native, Next, Node js, Nest js, Tailwind css, Docker`
+          }
+        },
+        {
+          title: "Empresa",
+          bussines: 'Marabunta',
+          dates: 'Marzo 2024 - Diciembre 2024',
+          cargo: 'Desarrollador full stack',
+          description: {
+            text: `Es una agencia de publicidad ubicada en Cali, dedicada a la producción de eventos, la creación de estrategias, el desarrollo a medida, la comunicación y la prensa.`
+          },
+          functions: {
+            text: `Desarrollador full stack<br/>
+            Diseñador web<br/>
             Administración de servidores linux<br/>
             Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Docker, CI/CD, Ubuntu server`
           }
@@ -153,7 +167,7 @@ export const masterDataES: masterData = {
           dates: 'Febrero 2021 - Abril 2021',
           cargo: 'Desarrollador frontend',
           description: {
-            text: `Mg group en una empresa colombiana de información tecnológica`
+            text: `Mg group es una empresa colombiana de información tecnológica`
           },
           functions: {
             text: `Desarrollador React<br/>
@@ -162,7 +176,7 @@ export const masterDataES: masterData = {
         },
         {
           title: "Empresa",
-          bussines: 'Frenlance',
+          bussines: 'Freelance',
           dates: 'Mayo 2019 - Diciembre 2021',
           cargo: 'Desarrollador full stack',
           description: {
@@ -227,7 +241,7 @@ export const masterDataEN: masterData = {
         knowledge and see the growth of other professionals. I am proactive, adaptable and committed to continuous improvement and technological innovation, 
         always looking for new opportunities to learn and contribute to challenging projects.`,
     info: [
-      'Age: 28',
+      'Age: 29',
       'City: Cali, Valle del cauca',
       'Address: Cra 2b #65a - 11',
       'Hobbies: Soccer, Chess'
@@ -276,8 +290,21 @@ export const masterDataEN: masterData = {
       description: [
         {
           title: "Company",
+          bussines: 'Ol sofware',
+          dates: 'April 2024 - Currently',
+          cargo: 'Full stack developer',
+          description: {
+            text: `Es una agencia de publicidad de Cali.`
+          },
+          functions: {
+            text: `Full stack developer<br/>
+            Technologies: Figma, React, React native, Next, Node js, Nest js, Tailwind css, Docker`
+          }
+        },
+        {
+          title: "Company",
           bussines: 'Marabunta',
-          dates: 'May 2024 - Currently',
+          dates: 'May 2024 - December 2024',
           cargo: 'Full stack developer',
           description: {
             text: `It is an advertising agency located in Cali, dedicated to the production of events, creation of strategies, custom development, communication and press.`
@@ -349,7 +376,7 @@ export const masterDataEN: masterData = {
         },
         {
           title: "Company",
-          bussines: 'Frenlance',
+          bussines: 'Freelance',
           dates: 'Mayo 2019 - Diciembre 2021',
           cargo: 'Full stack developer',
           description: {
