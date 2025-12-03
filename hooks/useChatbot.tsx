@@ -25,14 +25,11 @@ export const useChatbot = () => {
   const [messages, setMeassages] = useState<messageType[]>([]);
   const [loading, setLoading] = useState(false);
 
-
   const sent = async (message: string, idUser: string) => {
     if (message !== "") {
       setLoading(true);
       try {
         const response = await chatBotServicesSent(message, idUser);
-
-        console.log("response", response);
 
         setMeassages(prev => ([
           ...prev,
