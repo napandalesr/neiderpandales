@@ -125,6 +125,9 @@ function buildGeminiContents(
     : [{ role: 'user', parts: [{ text: currentMessage.trim() }] }];
 }
 
+export const maxDuration = 60;
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.GEMINI_API_KEY;
@@ -157,15 +160,14 @@ export async function POST(request: Request) {
         },
       };
 
-      // Modelos ordenados por estabilidad, baja latencia y disponibilidad
+      // Modelos ordenados por disponibilidad inmediata, baja latencia y sin 503
       const modelsToTry = [
-        'gemini-flash-latest',
-        'gemini-flash-lite-latest',
+        'gemini-3.1-flash-lite',
+        'gemini-3.1-flash-lite-preview',
         'gemini-3.5-flash',
-        'gemini-3.6-flash',
-        'gemini-3.7-flash',
+        'gemini-3-flash-preview',
+        'gemini-flash-latest',
         'gemini-3.8-flash',
-        'gemini-pro-latest',
       ];
 
       for (const model of modelsToTry) {
@@ -178,6 +180,7 @@ export async function POST(request: Request) {
               'x-goog-api-key': apiKey,
             },
             body: JSON.stringify(payload),
+            signal: AbortSignal.timeout(6500),
           });
 
           if (response.ok) {
@@ -206,11 +209,6 @@ export async function POST(request: Request) {
             const errData = await response.text();
             allAttempts.push({ model, status: response.status, error: errData });
             console.warn(`Error con modelo ${model} (${response.status}):`, errData);
-
-            // Si es 503 (alta demanda), esperar 350ms antes de llamar al siguiente para desaturar
-            if (response.status === 503) {
-              await new Promise((r) => setTimeout(r, 350));
-            }
           }
         } catch (err: any) {
           allAttempts.push({ model, error: err?.message || String(err) });
