@@ -24,46 +24,46 @@ const DATA_DIR = path.join(process.cwd(), 'data', 'conversations');
 /**
  * Sanitiza el correo para usarlo de forma segura como nombre de archivo
  */
-  export const sanitizeEmailForFilename = (email: string): string => {
-    return email
-      .toLowerCase()
-      .trim()
-      .replace(/@/g, '_at_')
-      .replace(/[^a-z0-9_.-]/g, '_');
-  };
+export const sanitizeEmailForFilename = (email: string): string => {
+  return email
+    .toLowerCase()
+    .trim()
+    .replace(/@/g, '_at_')
+    .replace(/[^a-z0-9_.-]/g, '_');
+};
 
-  /**
-   * Guarda o actualiza la conversación de un usuario.
-   * - Si `BLOB_READ_WRITE_TOKEN` está configurado (Vercel en producción o local con token),
-   *   se almacena en Vercel Blob en la nube.
-   * - Si no está configurado (desarrollo local sin token), guarda en el disco local `data/conversations/`.
-   */
-  export async function saveUserChatInteraction({
-    email,
-    name,
+/**
+ * Guarda o actualiza la conversación de un usuario.
+ * - Si `BLOB_READ_WRITE_TOKEN` está configurado (Vercel en producción o local con token),
+ *   se almacena en Vercel Blob en la nube.
+ * - Si no está configurado (desarrollo local sin token), guarda en el disco local `data/conversations/`.
+ */
+export async function saveUserChatInteraction({
+  email,
+  name,
+  userMessage,
+  botResponse,
+}: {
+  email: string;
+  name?: string;
+  userMessage: string;
+  botResponse: string;
+}): Promise<void> {
+  const cleanEmail = email?.trim().toLowerCase() || 'anonimo@sin-correo.com';
+  const filename = `${sanitizeEmailForFilename(cleanEmail)}.json`;
+  const blobPathname = `conversations/${filename}`;
+
+  const now = new Date();
+  const newEntry: ChatEntry = {
+    id: `${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
+    timestamp: now.toISOString(),
+    dateFormatted: now.toLocaleString('es-CO', {
+      dateStyle: 'long',
+      timeStyle: 'medium',
+    }),
     userMessage,
     botResponse,
-  }: {
-    email: string;
-    name?: string;
-    userMessage: string;
-    botResponse: string;
-  }): Promise<void> {
-    const cleanEmail = email?.trim().toLowerCase() || 'anonimo@sin-correo.com';
-    const filename = `${sanitizeEmailForFilename(cleanEmail)}.json`;
-    const blobPathname = `conversations/${filename}`;
-
-    const now = new Date();
-    const newEntry: ChatEntry = {
-      id: `${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
-      timestamp: now.toISOString(),
-      dateFormatted: now.toLocaleString('es-CO', {
-        dateStyle: 'long',
-        timeStyle: 'medium',
-      }),
-      userMessage,
-      botResponse,
-    };
+  };
 
     // 1. Si Vercel Blob está configurado (vía BLOB_STORE_ID con OIDC o BLOB_READ_WRITE_TOKEN)
     const isBlobConfigured = Boolean(
