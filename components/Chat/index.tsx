@@ -27,7 +27,9 @@ const inlineFormatting = (text: string): string => {
 const formatMarkdown = (text: string): string => {
   if (!text) return '';
 
-  const lines = text.split('\n');
+  // Limpiar etiquetas <br> o < br /> que puedan venir de datos crudos o respuestas
+  const cleanedText = text.replace(/<\s*br\s*\/?>/gi, '\n');
+  const lines = cleanedText.split('\n');
   const formatted: string[] = [];
 
   for (const line of lines) {

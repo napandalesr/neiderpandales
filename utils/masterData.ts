@@ -109,21 +109,23 @@ export const masterDataES: masterData = {
           },
           functions: {
             text: `Analista de desarrollo<br/>
-            Desarrollo y modernización de plataformas críticas nacionales: sistema de Elecciones Cafeteras y plataforma para la gestión y censo de 3.000 Fincas cafeteras.< br />
+            Desarrollo y modernización de plataformas críticas nacionales: sistema de Elecciones Cafeteras y plataforma para la gestión y censo de 3.000 Fincas cafeteras.<br/>
               Tecnologías: Spring Boot, Java, Maven, Node.js, TypeScript, Oracle Database, Docker, Kubernetes, GitLab, React`
           }
         },
         {
           title: "Empresa",
-          bussines: 'OlSoftware',
+          bussines: 'OlSoftware (Comfandi)',
           dates: 'Abril 2024 - Actualmente',
           cargo: 'Desarrollador full stack (Freelance ocasional)',
           description: {
-            text: `Es una agencia publicidad de Cali, dedicada a la producción de eventos, creación de estrategias, desarrollo a la medida, comunicación y prensa.Actualmente continúo realizando trabajos freelance ocasionales.`
+            text: `Empresa de tecnología en Cali donde he liderado el desarrollo de soluciones digitales estratégicas para la Caja de Compensación Familiar Comfandi en sectores de salud, movilidad y empleabilidad.`
           },
           functions: {
-            text: `Desarrollador full stack(Freelance)< br />
-        Tecnologias: Figma, React, React native, Next, Node js, Nest js, Tailwind css, Docker`
+            text: `Desarrollo y mantenimiento de la app móvil "Mi Comfandi" y migración hacia una arquitectura multiplataforma.<br/>
+Desarrollo de plataforma web de convenios médicos para que profesionales independientes (médicos, psicólogos, odontólogos con aval EPS) gestionen solicitudes y disponibilidad de horarios.<br/>
+Desarrollo de la sucursal virtual de empleabilidad para que psicólogos brinden acompañamiento personalizado a buscadores de empleo, agendamiento de capacitaciones y seguimiento post-empleo.<br/>
+Tecnologías: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Docker, Figma`
           }
         },
         {
@@ -135,56 +137,55 @@ export const masterDataES: masterData = {
             text: `Es una agencia de publicidad ubicada en Cali, dedicada a la producción de eventos, la creación de estrategias, el desarrollo a medida, la comunicación y la prensa.`
           },
           functions: {
-            text: `Desarrollador full stack < br />
-        Diseñador web < br />
-        Administración de servidores linux < br />
-        Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Docker, CI / CD, Ubuntu server`
+            text: `Desarrollador full stack <br/>
+Diseñador web <br/>
+Administración de servidores linux <br/>
+Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Docker, CI / CD, Ubuntu server`
           }
         },
         {
           title: "Empresa",
-          bussines: 'Indra',
+          bussines: 'Indra (Terpel)',
           dates: 'Mayo 2023 - Noviembre 2023',
-          cargo: 'Lider técnico',
+          cargo: 'Líder técnico & Desarrollador full stack',
           description: {
-            text: `INDRA es una multinacional de información tecnológica líder en España y una de las principales empresas de Europa y Latinoamérica.`
+            text: `Líder Técnico en la modernización de la plataforma web de Terpel para la caracterización y censo sociodemográfico del personal operativo de estaciones de servicio a nivel nacional.`
           },
           functions: {
-            text: `Desarrollador full stack < br />
-        Desarrollador Azure < br />
-        Desarrollador GCP < br />
-        Desarrollador Mysql < br />
-        Tecnologias: Azure devops, Nest js, Next js, Sass, CI / CD, GCP storage, Mysql`
+            text: `Liderazgo técnico del equipo, diseño de arquitectura cloud y gobierno de calidad de código.<br/>
+Modernización de la plataforma web de Terpel para el censo y caracterización del personal en cada estación de gasolina (métricas de género, composición familiar, hijos, etc.).<br/>
+Tecnologías: Next.js, Nest.js, Azure DevOps, CI/CD, GCP Storage, MySQL, Sass`
           }
         },
         {
           title: "Empresa",
-          bussines: 'Indra',
+          bussines: 'Indra (Tigo & Ecopetrol)',
           dates: 'Diciembre 2021 - Abril 2023',
           cargo: 'Desarrollador full stack',
           description: {
-            text: `INDRA es una multinacional de información tecnológica líder en España y una de las principales empresas de Europa y Latinoamérica.`
+            text: `Desarrollo en el e-commerce nacional del operador de telecomunicaciones Tigo y plataformas interactivas para Ecopetrol.`
           },
           functions: {
-            text: `Desarrollador.Net < br />
-        Desarrollador React < br />
-        Desarrollador Javascript < br />
-        Tecnologias: Vtex, React, .Net, Javascrit, Jquery, Sass, Gulp`
+            text: `Desarrollo en el e-commerce de Tigo: venta digital de planes móviles, módulos para televentas (call center), equipos en combo y artículos tecnológicos.<br/>
+Publicación y despliegue de campañas digitales de alto impacto: lanzamiento nacional de la eSIM (SIM electrónica) y nuevos teléfonos inteligentes.<br/>
+Desarrollo de plataforma web interactiva de minijuegos (ahorcado, sopa de letras, crucigrama) para la conmemoración de los 50 años de Ecopetrol.<br/>
+Tecnologías: VTEX, React, .NET, JavaScript, jQuery, Sass, Gulp`
           }
         },
         {
           title: "Empresa",
-          bussines: 'Praxis',
+          bussines: 'Praxis (Federación Nacional de Cafeteros)',
           dates: 'Mayo 2021 - Diciembre 2021',
           cargo: 'Desarrollador full stack',
           description: {
-            text: `Praxis es una multinacional de información tecnológica con presencia en más de 10 países`
+            text: `Consultora de tecnología donde estuve asignado para la Federación Nacional de Cafeteros de Colombia, desarrollando soluciones críticas web y móviles para el sector cafetero.`
           },
           functions: {
-            text: `Desarrollador React < br />
-        Desarrollador spring boot < br />
-        Desarrollador Oracle < br />
-        Tecnologias: React, Sass, Spring boot, Oracle`
+            text: `Desarrollador Full Stack (React, Spring Boot, Oracle)<br/>
+Desarrollo y soporte en la app móvil "El App del Café"<br/>
+Desarrollo en la plataforma web de Regulación Cafetera<br/>
+Desarrollo en la plataforma FEPC (Fondo de Estabilización de Precios del Café)<br/>
+Tecnologías: React, Spring Boot, Java, Oracle Database, Sass`
           }
         },
         {
@@ -196,7 +197,7 @@ export const masterDataES: masterData = {
             text: `Mg group es una empresa colombiana de información tecnológica`
           },
           functions: {
-            text: `Desarrollador React < br />
+            text: `Desarrollador React <br/>
         Tecnologias: React, Sass`
           }
         },
@@ -209,14 +210,14 @@ export const masterDataES: masterData = {
             text: `Mis inicios en el desarrollo con proyecto para fundaciones, artistas, agencias turisticas y colegios`
           },
           functions: {
-            text: `Desarrollador React < br />
-        Desarrollador Angular < br />
-        Desarrollador React < br />
-        Desarrollador Firebase < br />
-        Administración de CPanel < br />
-        Desarrollador Java < br />
-        Desarrollador Mysql < br />
-        Desarrollador Posgresql < br />
+            text: `Desarrollador React <br/>
+        Desarrollador Angular <br/>
+        Desarrollador React <br/>
+        Desarrollador Firebase <br/>
+        Administración de CPanel <br/>
+        Desarrollador Java <br/>
+        Desarrollador Mysql <br/>
+        Desarrollador Posgresql <br/>
         Tecnologias: React, Angular, Firebase, Java, Mysql, Posgresql`
           }
         }
@@ -323,82 +324,83 @@ such as programming, development methodologies, operations research, process aut
               text: `Technology consulting firm(digitalprof - it.com), serving as a development analyst assigned to the National Federation of Coffee Growers of Colombia(FNC).`
             },
             functions: {
-              text: `Development Analyst < br />
+              text: `Development Analyst <br/>
             Development of nationwide enterprise platforms: Coffee Elections (Elecciones Cafeteras) system and the 3,000 Coffee Farms management and census platform.<br/>
             Technologies: Spring Boot, Java, Maven, Node.js, TypeScript, Oracle Database, Docker, Kubernetes, GitLab, React`
             }
           },
 {
   title: "Company",
-    bussines: 'OlSoftware',
-      dates: 'April 2024 - Currently',
-        cargo: 'Full stack developer (Occasional Freelance)',
-          description: {
-    text: `Advertising agency located in Cali, dedicated to event production, custom development, communication, and press. Currently continuing to perform occasional freelance work.`
+  bussines: 'OlSoftware (Comfandi)',
+  dates: 'April 2024 - Currently',
+  cargo: 'Full stack developer (Occasional Freelance)',
+  description: {
+    text: `Technology company in Cali where I have led the development of strategic digital solutions for Comfandi (Family Compensation Fund) across healthcare, mobility, and employability.`
   },
   functions: {
-    text: `Full stack developer(Freelance)< br />
-              Technologies: Figma, React, React native, Next, Node js, Nest js, Tailwind css, Docker`
+    text: `Development and maintenance of "Mi Comfandi" mobile application and migration to cross-platform architecture.<br/>
+Development of a medical agreement web portal for private healthcare providers (doctors, psychologists, dentists with EPS endorsement) to manage schedules and availability.<br/>
+Development of the employability virtual branch for psychologists to provide job-seeking guidance, schedule training, and post-employment monitoring.<br/>
+Technologies: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Docker, Figma`
   }
 },
 {
   title: "Company",
-    bussines: 'Marabunta',
-      dates: 'May 2024 - December 2024',
-        cargo: 'Full stack developer',
-          description: {
+  bussines: 'Marabunta',
+  dates: 'May 2024 - December 2024',
+  cargo: 'Full stack developer',
+  description: {
     text: `It is an advertising agency located in Cali, dedicated to the production of events, creation of strategies, custom development, communication and press.`
   },
   functions: {
-    text: `Web designer < br />
-          Linux server administration < br />
+    text: `Web designer <br/>
+          Linux server administration <br/>
           Technologies: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Ubuntu server`
   }
 },
 {
   title: "Company",
-    bussines: 'Indra',
-      dates: 'May 2023 - November 2023',
-        cargo: 'Technical leader',
-          description: {
-    text: `INDRA is a leading multinational information technology company in Spain and one of the main companies in Europe and Latin America.`
+  bussines: 'Indra (Terpel)',
+  dates: 'May 2023 - November 2023',
+  cargo: 'Technical leader & Full stack developer',
+  description: {
+    text: `Global IT consultancy where I served as Technical Leader overseeing the modernization of Terpel's nationwide sociodemographic survey and workforce characterization platform across gas stations.`
   },
   functions: {
-    text: `Full stack developer < br />
-          Developer Azure < br />
-          Developer GCP < br />
-          Developer Mysql < br />
-          Technologies: Azure devops, Nest js, Next js, Sass, CI / CD, Github Actions, GCP storage, Mysql`
+    text: `Team technical leadership, cloud architecture design, and code quality governance.<br/>
+Modernization of Terpel's web platform for workforce census and demographic profiling per gas station (gender metrics, family composition, children, etc.).<br/>
+Technologies: Next.js, Nest.js, Azure DevOps, CI/CD, GCP Storage, MySQL, Sass`
   }
 },
 {
   title: "Company",
-    bussines: 'Indra',
-      dates: 'December 2021 - April 2023',
-        cargo: 'Full stack developer',
-          description: {
-    text: `INDRA is a leading multinational information technology company in Spain and one of the main companies in Europe and Latin America.`
+  bussines: 'Indra (Tigo & Ecopetrol)',
+  dates: 'December 2021 - April 2023',
+  cargo: 'Full stack developer',
+  description: {
+    text: `Developed high-volume e-commerce platforms for major telecommunications operator Tigo and corporate interactive web platforms for Ecopetrol.`
   },
   functions: {
-    text: `Developer.Net < br />
-          Developer React < br />
-          Developer Javascript < br />
-          Technologies: Vtex, React, .Net, Javascrit, Jquery, Sass, Gulp`
+    text: `Development of Tigo's nationwide e-commerce: online sale of mobile phone plans, telesales modules (call center agents), bundled phones, and tech accessories.<br/>
+Deployment and launch of high-traffic digital campaigns: rollout of eSIM technology and new flagship smartphone releases.<br/>
+Development of an interactive web games platform (hangman, word search, crossword) for Ecopetrol's 50th-anniversary celebration.<br/>
+Technologies: VTEX, React, .NET, JavaScript, jQuery, Sass, Gulp`
   }
 },
 {
   title: "Company",
-    bussines: 'Praxis',
+    bussines: 'Praxis (National Federation of Coffee Growers)',
       dates: 'May 2021 - December 2021',
         cargo: 'Full stack developer',
           description: {
-    text: `Praxis is a multinational information technology company with presence in more than 10 countries.`
+    text: `Technology consulting firm assigned to the National Federation of Coffee Growers of Colombia (FNC), building critical web and mobile solutions for the coffee industry.`
   },
   functions: {
-    text: `Developer React<br/>
-        Developer spring boot<br/>
-      Developer Oracle<br/>
-    Technologies: React, Sass, Spring boot, Oracle`
+    text: `Full Stack Developer (React, Spring Boot, Oracle)<br/>
+Development and support for "El App del Café" mobile application<br/>
+Development of the Coffee Regulation web portal<br/>
+Development on the FEPC (Coffee Price Stabilization Fund) platform<br/>
+Technologies: React, Spring Boot, Java, Oracle Database, Sass`
   }
 },
 {
@@ -410,7 +412,7 @@ such as programming, development methodologies, operations research, process aut
     text: `Mg group in a Colombian information technology company`
   },
   functions: {
-    text: `Developer React < br />
+    text: `Developer React <br/>
   Technologies: React, Sass`
   }
 },
@@ -423,14 +425,14 @@ such as programming, development methodologies, operations research, process aut
     text: `My beginnings in development with a project for foundations, artists, tourist agencies and schools`
   },
   functions: {
-    text: `Desarrollador React < br />
-  Developer Angular < br />
-    Desarrollador React < br />
-      Developer Firebase < br />
-        CPanel Administration < br />
-          Developer Java < br />
-            Developer Mysql < br />
-              Developer Posgresql < br />
+    text: `Desarrollador React <br/>
+  Developer Angular <br/>
+    Desarrollador React <br/>
+      Developer Firebase <br/>
+        CPanel Administration <br/>
+          Developer Java <br/>
+            Developer Mysql <br/>
+              Developer Posgresql <br/>
                 Technologies: React, Angular, Firebase, Java, Mysql, Posgresql`
   }
 }

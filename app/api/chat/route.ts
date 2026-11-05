@@ -35,16 +35,34 @@ GUÍA MAESTRA PARA PREGUNTAS DE RECLUTADORES Y ENTREVISTAS TÉCNICAS:
        1) **Elecciones Cafeteras**: Sistema tecnológico nacional para la gestión, censo electoral, validación y votaciones del gremio cafetero en Colombia.
        2) **3.000 Fincas (Gestión y Censo Cafetero)**: Plataforma integral para la caracterización, administración, monitoreo, productividad y trazabilidad de miles de fincas y productores cafeteros a nivel nacional.
      * Stack tecnológico utilizado: **Spring Boot con Java y Maven**, **Node.js con TypeScript**, bases de datos **Oracle Database** (modelado relacional y grandes volúmenes de datos), contenedores con **Docker**, despliegues y clústeres en **Kubernetes**, pipelines CI/CD con **GitLab** y frontend administrativo con **React**.
-   - Colaboración freelance continua: **OlSoftware** (Abril 2024 - Actualmente).
-     * Cargo: **Desarrollador Full Stack (Freelance ocasional)**.
-     * Stack: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Docker.
-     * Funciones: Desarrollo de plataformas a medida y aplicaciones móviles para eventos y campañas corporativas.
+   - Colaboración continua: **OlSoftware** (Abril 2024 - Actualmente).
+     * Modalidad: Desarrollador Full Stack (Freelance continuo y consultor técnico).
+     * Cliente principal asignado: **Comfandi** (Caja de Compensación Familiar).
+     * Proyectos estratégicos desarrollados:
+       1) **App Móvil "Mi Comfandi"**: Desarrollo, mantenimiento evolutivo y proceso de migración de la arquitectura móvil hacia una solución multiplataforma moderna (React Native).
+       2) **Portal Web de Convenios para Profesionales de la Salud**: Plataforma para que médicos independientes, psicólogos y odontólogos con consultorio privado soliciten y gestionen convenio con Comfandi (avalado por EPS), incluyendo la parametrización de sus agendas y horarios de disponibilidad.
+       3) **Sucursal Virtual de Empleabilidad**: Plataforma para que psicólogos y orientadores laborales brinden acompañamiento personalizado a personas en búsqueda de empleo, agendando capacitaciones, talleres y realizando seguimiento continuo incluso después de colocarse laboralmente.
+     * Stack: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Docker, Figma.
 
 3. TRAYECTORIA LABORAL CRONOLÓGICA PREVIA:
    - **Marabunta** (Marzo 2024 - Diciembre 2024) | Desarrollador Full Stack & Diseñador Web (Next.js, React, Node.js, Nest.js, Strapi, Docker, CI/CD, Ubuntu Server).
-   - **Indra** (Mayo 2023 - Noviembre 2023) | **Líder Técnico** y Desarrollador Full Stack (Azure DevOps, Nest.js, Next.js, Sass, CI/CD, GCP Storage, MySQL). Lideré equipo técnico, diseñé arquitectura en la nube y goberné calidad de código.
-   - **Indra** (Diciembre 2021 - Abril 2023) | Desarrollador Full Stack (.NET, React, JavaScript, VTEX, jQuery, Sass).
-   - **Praxis** (Mayo 2021 - Diciembre 2021) | Desarrollador Full Stack (React, Spring Boot, Oracle Database).
+   - **Indra (Terpel)** (Mayo 2023 - Noviembre 2023) | **Líder Técnico** y Desarrollador Full Stack.
+     * Proyecto: **Modernización de la Plataforma Web de Terpel**.
+     * Responsabilidades e impacto: Lideré técnicamente al equipo, definí la arquitectura en la nube y goberné los estándares de calidad. Modernizamos el sistema nacional de encuestas y caracterización sociodemográfica del personal operativo en cada estación de servicio de gasolina a nivel nacional (métricas demográficas, distribución de género, hijos, bienestar, etc.).
+     * Stack: Next.js, Nest.js, Azure DevOps, CI/CD, GCP Storage, MySQL, Sass.
+   - **Indra (Tigo & Ecopetrol)** (Diciembre 2021 - Abril 2023) | Desarrollador Full Stack.
+     * Proyectos de alta transaccionalidad e impacto corporativo:
+       1) **E-commerce Nacional Tigo (Operador de Telecomunicaciones)**: Desarrollo de la plataforma de comercio electrónico para venta digital de planes móviles, venta asistida de televentas (call center con operadores propios de Tigo), venta de smartphones con plan y artículos tecnológicos. Despliegue de campañas de alto tráfico como el lanzamiento nacional de la **eSIM (SIM electrónica)** y lanzamientos de nuevos dispositivos móviles insignia.
+       2) **Ecopetrol (Celebración 50 Años)**: Desarrollo de plataforma web interactiva con minijuegos corporativos y educativos (ahorcado, sopas de letras, crucigramas) para la celebración del 50 aniversario de Ecopetrol.
+     * Stack: VTEX, React, .NET, JavaScript, jQuery, Sass, Gulp.
+   - **Praxis (Federación Nacional de Cafeteros)** (Mayo 2021 - Diciembre 2021) | Desarrollador Full Stack (React, Spring Boot, Oracle Database).
+     * Modalidad: Consultora de tecnología asignado directamente a la **Federación Nacional de Cafeteros de Colombia**.
+     * Proyectos estratégicos desarrollados:
+       1) **El App del Café**: Aplicación móvil para caficultores y gestión del gremio cafetero.
+       2) **Web de Regulación Cafetera**: Plataforma web institucional para la normativa y marco regulatorio cafetero nacional.
+       3) **FEPC (Fondo de Estabilización de Precios del Café)**: Plataforma institucional para la administración y operación del fondo de estabilización de precios.
+     * Stack: React, Spring Boot (Java), Oracle Database, Sass.
+     * Nota clave: Cuento con una sólida trayectoria con la **Federación Nacional de Cafeteros** en dos etapas clave: en 2021 (vía Praxis) y en la actualidad (vía Digital Profit), sumando un dominio integral de sus sistemas y del negocio cafetero nacional.
    - **MG Group** (Febrero 2021 - Abril 2021) | Desarrollador Frontend (React, Sass).
    - **Freelance** (Mayo 2019 - Diciembre 2021) | Desarrollador Full Stack (React, Angular, Firebase, Java, MySQL, PostgreSQL).
 
