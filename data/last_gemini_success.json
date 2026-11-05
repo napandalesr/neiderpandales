@@ -1,0 +1,34 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "data": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Fuera del mundo del código, la tecnología y las arquitecturas de software, disfruto mantener un equilibrio saludable con actividades que me permiten recargar energías, estimular la mente y conectar con los demás. \n\nAquí te comparto lo que me apasiona hacer en mi tiempo libre:\n\n* **Deporte y Actividad Física:** Me encanta jugar **fútbol**. Es una excelente manera de mantenerme activo, liberar el estrés del día a día y vivir el compañerismo y el trabajo en equipo fuera de las pantallas.\n* **Ajedrez:** Disfruto mucho jugar y analizar partidas de ajedrez. Es un juego que estimula el pensamiento estratégico, la anticipación y la toma de decisiones bajo presión, habilidades que, sin darme cuenta, también aplico mucho en la ingeniería de software cuando diseño arquitecturas o resuelvo bugs complejos.\n* **Enseñar y Compartir Conocimiento:** Me apasiona profundamente la mentoría. En mi tiempo libre disfruto enseñar programación a principiantes y estudiantes. Ver el momento en que un concepto hace \"clic\" en la mente de alguien que está aprendiendo es algo sumamente gratificante.\n* **Creación de Videojuegos:** Como desarrollador, siempre me ha fascinado la creación de experiencias interactivas. De hecho, soy el creador de **Carril X** (`com.carrilx.carrilx`), un videojuego arcade 2D para Android que desarrollé y publiqué en la Google Play Store. Fue un reto técnico y creativo increíble que disfruté de principio a fin.\n\nMe considero una persona curiosa, dinámica y con muchos intereses que complementan mi perfil técnico. ¿Compartes alguno de estos pasatiempos o te apasiona alguna otra actividad en tu tiempo libre?",
+              "thoughtSignature": "EmAKXgFpFH0TQEESaYcpXNCMDenVO9udUgO054eFPGqTkqnAmlhRig+E/DoLzTf2hIDBfs3LZo0PrPjBGExtYmFMsEXceUNxRqqDd3pJNxUuVDTFNR1+YQ64gP0+hr0q58I="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3363,
+      "candidatesTokenCount": 370,
+      "totalTokenCount": 3733,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3363
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "INjraoa2Le-P1sgPwIPImQg"
+  }
+}

@@ -21,13 +21,13 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <main className="bg-[url('/images/fondo.jpg')] bg-no-repeat bg-cover relative xl:h-screen">
-        <Chatbot/>
-        {/*<Whatsapp/>*/}
-        <ToastProvider>
-          {children}
-        </ToastProvider>
-        </main>
+          <main className="bg-[url('/images/fondo.jpg')] bg-no-repeat bg-cover relative min-h-screen">
+            <Chatbot />
+            {/*<Whatsapp/>*/}
+            <ToastProvider>
+              {children}
+            </ToastProvider>
+          </main>
       </body>
     </html>
   );
