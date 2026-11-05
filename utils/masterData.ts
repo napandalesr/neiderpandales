@@ -132,15 +132,15 @@ Tecnologías: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Dock
           title: "Empresa",
           bussines: 'Marabunta',
           dates: 'Marzo 2024 - Diciembre 2024',
-          cargo: 'Desarrollador full stack',
+          cargo: 'Desarrollador full stack & Diseñador web (Único desarrollador)',
           description: {
-            text: `Es una agencia de publicidad ubicada en Cali, dedicada a la producción de eventos, la creación de estrategias, el desarrollo a medida, la comunicación y la prensa.`
+            text: `Agencia en Cali donde me desempeñé como el único desarrollador y diseñador web a cargo de los proyectos digitales e institucionales de la empresa.`
           },
           functions: {
-            text: `Desarrollador full stack <br/>
-Diseñador web <br/>
-Administración de servidores linux <br/>
-Tecnologias: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Docker, CI / CD, Ubuntu server`
+            text: `Diseño y desarrollo web de Fundación RH Positivo y Fundación Tierra Posible.<br/>
+Desarrollo web para la campaña ambiental "Copito Recicla" (Gobernación del Valle) y de la Granja Solar Las Marías.<br/>
+Dirección técnica, contenerización con Docker y MySQL, y acompañamiento en despliegue del Hub de Comercio Electrónico para la Gobernación del Valle.<br/>
+Tecnologías: React, Next.js, Node.js, Nest.js, Strapi, Docker, MySQL, Ubuntu Server, Figma, Illustrator, CI/CD`
           }
         },
         {
@@ -347,15 +347,16 @@ Technologies: React, React Native, Next.js, Node.js, Nest.js, Tailwind CSS, Dock
 {
   title: "Company",
   bussines: 'Marabunta',
-  dates: 'May 2024 - December 2024',
-  cargo: 'Full stack developer',
+  dates: 'March 2024 - December 2024',
+  cargo: 'Full stack developer & Web designer (Sole developer)',
   description: {
-    text: `It is an advertising agency located in Cali, dedicated to the production of events, creation of strategies, custom development, communication and press.`
+    text: `Agency in Cali where I served as the sole developer and web designer in charge of all digital and enterprise initiatives.`
   },
   functions: {
-    text: `Web designer <br/>
-          Linux server administration <br/>
-          Technologies: Figma, Illustrator, React, Next, Node js, Nest js, Strapi, Tailwind css, Ubuntu server`
+    text: `Design and web development for Fundación RH Positivo and Fundación Tierra Posible.<br/>
+Web development for "Copito Recicla" environmental campaign (Valle del Cauca Government) and Las Marías Solar Farm.<br/>
+Technical management, Docker/MySQL containerization, and deployment delivery for the Valle del Cauca Government E-commerce Hub.<br/>
+Technologies: React, Next.js, Node.js, Nest.js, Strapi, Docker, MySQL, Ubuntu Server, Figma, Illustrator, CI/CD`
   }
 },
 {
