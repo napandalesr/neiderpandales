@@ -94,9 +94,11 @@ GUÍA MAESTRA PARA PREGUNTAS DE RECLUTADORES Y ENTREVISTAS TÉCNICAS:
 7. POLÍTICA ESTRICTA DE LÍMITES, VERACIDAD Y TEMAS FUERA DE CONTEXTO (CERO INVENCIÓN):
    - **Propósito único y exclusivo**: Este chat es el portafolio profesional interactivo de Neider Andrés Pandales. Su único objetivo es informar a reclutadores, líderes técnicos y clientes sobre tu perfil, experiencia técnica, arquitectura y proyectos de ingeniería. NO es un bot conversacional abierto ni un asistente de tareas generales.
 
-   - **Prohibición de alucinación y estereotipos de entretenimiento**:
-     * PROHIBIDO inventar gustos de entretenimiento (películas, series como "Mr. Robot" ni ninguna otra ficción, programas de TV, música, comida, etc.) que no estén en esta guía.
-     * Si preguntan por televisión, series o gustos informales: Aclara con sencillez y amabilidad que no sueles ver televisión ni tienes programas o series favoritas, ya que tu tiempo libre lo dedicas exclusivamente a tus pasatiempos reales: **jugar fútbol**, **jugar ajedrez** y **enseñar programación a principiantes y estudiantes**.
+   - **Preguntas sobre televisión, series, cine, música o entretenimiento**:
+     * No ves televisión ni consumes series. NUNCA nombres ninguna serie de televisión, programa de entretenimiento, película, actor, música o comida.
+     * NUNCA utilices fórmulas como "si tuviera que elegir...", "me inclino por...", "disfruto de producciones como..." para recomendar series o películas.
+     * Si te preguntan por programas de televisión, series, cine o entretenimiento casual, responde invariablemente de esta forma:
+       "No suelo ver televisión ni tengo series o programas favoritos; mi tiempo libre fuera del desarrollo de software lo dedico exclusivamente a mis pasatiempos reales: **jugar fútbol**, **jugar ajedrez** y **enseñar programación** a principiantes y estudiantes. ¿Te gustaría conocer más sobre mi trayectoria profesional, mi stack tecnológico o mis proyectos de ingeniería?"
 
    - **Vida personal privada, familiar o sentimental**:
      * Si preguntan sobre pareja, estado civil, hijos o detalles familiares íntimos: Declina con elegancia y respeto: "Prefiero mantener la reserva sobre mi vida personal; este espacio está enfocado exclusivamente en mi perfil profesional y trayectoria como Ingeniero de Software. ¿Te gustaría conocer más sobre mis proyectos o tecnologías?".
@@ -133,7 +135,15 @@ function buildGeminiContents(
     for (const item of history) {
       const text = item.text?.trim();
       if (!text) continue;
-      if (text.startsWith('Disculpa,') || text.startsWith('Aviso técnico') || text.startsWith('Lo siento') || text.startsWith('Cuento con más de 6 años de experiencia')) continue;
+      if (
+        text.startsWith('Disculpa,') ||
+        text.startsWith('Aviso técnico') ||
+        text.startsWith('Lo siento') ||
+        text.startsWith('Cuento con más de 6 años de experiencia') ||
+        /Mr\.?\s*Robot|Queen'?s\s*Gambit|Gambito\s*de\s*Dama/i.test(text)
+      ) {
+        continue;
+      }
 
       const role: 'user' | 'model' = item.emisor === 'chatbot' ? 'model' : 'user';
       turns.push({ role, text });
@@ -283,6 +293,11 @@ export async function POST(request: Request) {
         ? `[${firstFailure.model} HTTP ${firstFailure.status}]: ${firstFailure.error}`
         : 'Error de red con la API de Gemini.';
       replyText = `Disculpa, en este momento el servicio de IA devolvió un error de conexión: ${errorMsg}. Por favor intenta de nuevo.`;
+    }
+
+    // Salvaguarda determinista contra alucinaciones de entretenimiento
+    if (/Mr\.?\s*Robot|Queen'?s\s*Gambit|Gambito\s*de\s*Dama/i.test(replyText)) {
+      replyText = 'No suelo ver televisión ni tengo series o programas favoritos; mi tiempo libre fuera del desarrollo de software lo dedico a mis pasatiempos: jugar fútbol, practicar ajedrez y enseñar programación a principiantes y estudiantes. ¿Te gustaría conocer más sobre mi trayectoria profesional o mis proyectos de software?';
     }
 
     // Guardar la interacción en el archivo JSON del usuario
