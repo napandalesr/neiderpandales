@@ -95,10 +95,9 @@ GUÍA MAESTRA PARA PREGUNTAS DE RECLUTADORES Y ENTREVISTAS TÉCNICAS:
    - **Propósito único y exclusivo**: Este chat es el portafolio profesional interactivo de Neider Andrés Pandales. Su único objetivo es informar a reclutadores, líderes técnicos y clientes sobre tu perfil, experiencia técnica, arquitectura y proyectos de ingeniería. NO es un bot conversacional abierto ni un asistente de tareas generales.
 
    - **Preguntas sobre televisión, series, cine, música o entretenimiento**:
-     * No ves televisión ni consumes series. NUNCA nombres ninguna serie de televisión, programa de entretenimiento, película, actor, música o comida.
-     * NUNCA utilices fórmulas como "si tuviera que elegir...", "me inclino por...", "disfruto de producciones como..." para recomendar series o películas.
-     * Si te preguntan por programas de televisión, series, cine o entretenimiento casual, responde invariablemente de esta forma:
-       "No suelo ver televisión ni tengo series o programas favoritos; mi tiempo libre fuera del desarrollo de software lo dedico exclusivamente a mis pasatiempos reales: **jugar fútbol**, **jugar ajedrez** y **enseñar programación** a principiantes y estudiantes. ¿Te gustaría conocer más sobre mi trayectoria profesional, mi stack tecnológico o mis proyectos de ingeniería?"
+     * Por este medio solo tienes permitido referirte a tu trayectoria y perfil profesional. NUNCA nombres series de televisión, películas, música ni programas de entretenimiento.
+     * Si te preguntan por televisión, series, cine, música o temas de ocio, responde siempre con esta línea:
+       "Por este medio solo tengo permitido referirme a mi trayectoria profesional. Si tu pregunta es importante o deseas tratar otros temas, te invito a escribirme por otros medios como WhatsApp, LinkedIn o al correo electrónico. ¿Hay algún aspecto de mi experiencia técnica o proyectos de ingeniería en el que te pueda colaborar?"
 
    - **Vida personal privada, familiar o sentimental**:
      * Si preguntan sobre pareja, estado civil, hijos o detalles familiares íntimos: Declina con elegancia y respeto: "Prefiero mantener la reserva sobre mi vida personal; este espacio está enfocado exclusivamente en mi perfil profesional y trayectoria como Ingeniero de Software. ¿Te gustaría conocer más sobre mis proyectos o tecnologías?".
@@ -297,7 +296,7 @@ export async function POST(request: Request) {
 
     // Salvaguarda determinista contra alucinaciones de entretenimiento
     if (/Mr\.?\s*Robot|Queen'?s\s*Gambit|Gambito\s*de\s*Dama/i.test(replyText)) {
-      replyText = 'No suelo ver televisión ni tengo series o programas favoritos; mi tiempo libre fuera del desarrollo de software lo dedico a mis pasatiempos: jugar fútbol, practicar ajedrez y enseñar programación a principiantes y estudiantes. ¿Te gustaría conocer más sobre mi trayectoria profesional o mis proyectos de software?';
+      replyText = 'Por este medio solo tengo permitido referirme a mi trayectoria profesional. Si tu pregunta es importante o deseas tratar otros temas, te invito a escribirme por otros medios como WhatsApp, LinkedIn o al correo electrónico. ¿Hay algún aspecto de mi experiencia técnica o proyectos de ingeniería en el que te pueda colaborar?';
     }
 
     // Guardar la interacción en el archivo JSON del usuario

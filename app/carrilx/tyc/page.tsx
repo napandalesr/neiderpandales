@@ -121,15 +121,15 @@ export default function CarrilxPrivacyPolicy() {
               </span>
               <div className="flex items-center justify-between gap-2">
                 <a
-                  href="mailto:soporte.carrilx@gmail.com"
+                  href="mailto:neidercoding@gmail.com"
                   className="text-xs sm:text-sm font-medium text-sky-400 hover:underline truncate"
                 >
-                  soporte.carrilx@gmail.com
+                  neidercoding@gmail.com
                 </a>
                 <button
                   type="button"
                   onClick={() =>
-                    copyToClipboard("soporte.carrilx@gmail.com", "email")
+                    copyToClipboard("neidercoding@gmail.com", "email")
                   }
                   className="text-slate-400 hover:text-white transition-colors"
                   title="Copiar correo"
@@ -493,15 +493,15 @@ export default function CarrilxPrivacyPolicy() {
                     Correo Electrónico
                   </span>
                   <a
-                    href="mailto:soporte.carrilx@gmail.com"
+                    href="mailto:neidercoding@gmail.com"
                     className="text-amber-400 hover:text-amber-300 font-bold text-base break-all transition-colors"
                   >
-                    soporte.carrilx@gmail.com
+                    neidercoding@gmail.com
                   </a>
                 </div>
                 <div className="mt-4">
                   <a
-                    href="mailto:soporte.carrilx@gmail.com"
+                    href="mailto:neidercoding@gmail.com"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-all duration-200"
                   >
                     Enviar correo
